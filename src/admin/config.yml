@@ -1,0 +1,30 @@
+
+backend:
+  repo: "ibywaks/personal-how-to-blog"
+  name: github
+  branch: "master" # Branch to update (optional; defaults to master)
+media_folder: "static/uploads"
+public_folder: "/uploads"
+collections:
+  - label: "Posts"
+    name: "posts"
+    extension: "json"
+    folder: "src/data/posts"
+    slug: "{{slug}}"
+    create: true
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Date"
+        name: "date"
+        widget: "date"
+        format: "MM/YYYY" #optional
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        options: ["Travel", "Tech", "Food", "Fashion"]
+        default: "Tech"
+      - label: "body"
+        name: "body"
+        widget: "text"
