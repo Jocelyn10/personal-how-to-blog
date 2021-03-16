@@ -28,3 +28,9 @@ collections:
       - label: "body"
         name: "body"
         widget: "text"
+      - label: "Cover Image"
+        name: "image"
+        widget: "image"
+        media_library:
+          config:
+          multiple: false
