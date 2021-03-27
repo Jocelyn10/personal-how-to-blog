@@ -5,7 +5,7 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Gridsome',
+  siteName: "Iby's Personal Blog",
   plugins: [
     {
       use: `gridsome-plugin-netlify-cms`,
