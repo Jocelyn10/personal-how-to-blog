@@ -20,10 +20,11 @@ collections:
         name: "date"
         widget: "date"
         format: "MM/YYYY" #optional
-      - label: "Category"
-        name: "category"
+      - label: "Categories"
+        name: "categories"
         widget: "select"
         options: ["Travel", "Tech", "Food", "Fashion"]
+        multiple: true
         default: "Tech"
       - label: "body"
         name: "body"
